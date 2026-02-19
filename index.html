@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="glass-card">
+      <h1>Weather Forecast</h1>
+
+      <!-- Search -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter city (e.g., Bengaluru, London)"
+        />
+        <button onclick="getWeather()">Search</button>
+      </div>
+
+      <!-- Current Weather -->
+      <div class="weather-info" id="weatherInfo">
+        <p class="placeholder">Search for a city to see weather details</p>
+      </div>
+
+      <!-- Forecast Section -->
+      <div class="forecast" id="forecast"></div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
